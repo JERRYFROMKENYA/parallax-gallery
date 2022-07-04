@@ -1,0 +1,12 @@
+.MainGallery {
+    text-align: center;
+    
+  }
+  .headcaption
+  {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    color:white;
+  }
+  
