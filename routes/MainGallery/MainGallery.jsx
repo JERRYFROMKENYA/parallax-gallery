@@ -27,12 +27,19 @@ import p23 from './assets/images/23.jpg'
 import p24 from './assets/images/24.jpg'
 import p25 from './assets/images/25.jpg' 
 import land from './assets/images/land.png'
+import 
+{
+  //BrowserRouter as Router,
+  //Routes,
+  //Route,
+  Link
+} from "react-router-dom";
 
 
 export default function MainGallery() {
   const ref = useRef()
   let o=0
-  let v=0
+  let v=2.7
   //let img=0;
   return (
     <div className='MainGallery' ref={ref}>
@@ -40,182 +47,190 @@ export default function MainGallery() {
     <Parallax pages={27}>
     <ParallaxLayer offset={0} factor={27} speed={0}
     style={{backgroundImage: `url(${land})`,backgroundSize:`cover`}}>
-          <img src={p1} alt="Designs by..." />
-             <caption>©️2022 Designs by Breitner, Lanesteppers™️.</caption>
-             <p>Engineering by Jerry Ochieng.</p>
-             <p>Created for the visuals.</p>
-            <p>So glad that you could make it...</p>
+          {/*<img src={p1} alt="Designs by..." />*/}
+          <h2>Scroll Down
+          ⬇️⬇️⬇️
+          </h2>
+          <br />
+          <h2>
+          or
+          </h2>
+          <h2>
+            <Link className='Link' to="/creator">Check out the Creators of the site!</Link>
+          </h2>
+      
         </ParallaxLayer>
     
-        <ParallaxLayer offset={o+=1}  speed={1}  factor={1}
+    
+        <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1} 
     style={{
             backgroundImage: `url(${p2})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1} horizontal="true"
     style={{
             backgroundImage: `url(${p3})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p4})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p5})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p6})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p7})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p8})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p9})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p10})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p11})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p12})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p13})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p14})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p15})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p16})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p17})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p18})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p19})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p20})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p21})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p22})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p23})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p24})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url(${p25})`,
             backgroundSize: 'contain',backgroundPosition:"center",
           }} >
              
         </ParallaxLayer>
- <ParallaxLayer offset={o+=1}  speed={v+=0.5}  factor={1}
+ <ParallaxLayer offset={o+=1}  speed={v-=0.1}  factor={1}
     style={{
             backgroundImage: `url()`,
             backgroundSize: 'contain',backgroundPosition:"center",
